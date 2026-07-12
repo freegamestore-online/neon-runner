@@ -1,13 +1,13 @@
 {
-  "name": "APPNAME",
+  "name": "neon-runner",
   "private": true,
   "packageManager": "pnpm@10.30.3",
   "engines": { "node": ">=22" },
   "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
   "scripts": {
-    "dev": "pnpm --filter @APPNAME/web dev",
-    "build": "pnpm --filter @APPNAME/web build",
-    "preview": "pnpm --filter @APPNAME/web preview",
-    "typecheck": "pnpm --filter @APPNAME/web exec tsc -b"
+    "dev": "pnpm --filter @neon-runner/web dev",
+    "build": "pnpm --filter @neon-runner/web build",
+    "preview": "pnpm --filter @neon-runner/web preview",
+    "typecheck": "pnpm --filter @neon-runner/web exec tsc -b"
   }
 }

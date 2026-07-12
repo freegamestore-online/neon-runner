@@ -21,7 +21,7 @@ export default function App() {
   }, []);
 
   return (
-    <GameShell topbar={<GameTopbar title="APPNAME" score={score} />}>
+    <GameShell topbar={<GameTopbar title="Neon Runner" score={score} />}>
       {/* Phaser injects its <canvas> here and scales it to fill the box. */}
       <div ref={hostRef} className="w-full h-full touch-none" />
     </GameShell>

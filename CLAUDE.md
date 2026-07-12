@@ -1,8 +1,8 @@
-# APPNAME
+# Neon Runner
 
 A free game on FreeGameStore, built on the **Phaser 4** browser game engine.
 
-- Subdomain: `APPNAME.freegamestore.online`
+- Subdomain: `Neon Runner.freegamestore.online`
 - Dev: `pnpm install && pnpm dev`
 - Build: `pnpm build`
 - Deploy: `git push origin main` (auto-deploys to R2 via GitHub Actions)
