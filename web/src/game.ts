@@ -7,7 +7,6 @@ const VH = 640;
 // ─── Colours ───────────────────────────────────────────────────────────────
 const COL_BG       = 0x0a0a1a;
 const COL_PLAYER   = 0x00ffcc;
-const COL_GLOW     = 0x00ffcc;
 const COL_OBSTACLE = 0xff2060;
 const COL_GRID     = 0x1a1a3a;
 const COL_PARTICLE = [0x00ffcc, 0x00ccff, 0xcc00ff, 0xffcc00];
@@ -276,7 +275,7 @@ class PlayScene extends Phaser.Scene {
     });
   }
 
-  update(time: number, delta: number): void {
+  update(_time: number, delta: number): void {
     if (this.over) return;
 
     const dt = delta / 1000;
@@ -444,7 +443,7 @@ class PlayScene extends Phaser.Scene {
     btnBg.setInteractive({ useHandCursor: true });
     btnTxt.setInteractive({ useHandCursor: true });
 
-    const restart = (): void => this.scene.start("play");
+    const restart = (): void => { this.scene.start("play"); };
     btnBg.on("pointerdown", restart);
     btnTxt.on("pointerdown", restart);
     this.input.keyboard?.once("keydown-SPACE", restart);
